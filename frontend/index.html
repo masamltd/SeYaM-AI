@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SeYaM AI</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div>
+        <h1>SeYaM AI</h1>
+        <p>Multilingual AI Assistant</p>
+      </div>
+      <span id="status">Checking...</span>
+    </header>
+
+    <main id="chat"></main>
+
+    <div class="composer">
+      <input type="file" id="fileInput" hidden>
+
+      <button id="attachBtn" type="button">📎</button>
+
+      <input
+        id="messageInput"
+        type="text"
+        placeholder="Ask SeYaM AI anything..."
+        autocomplete="off"
+      >
+
+      <button id="sendBtn" type="button">Send</button>
+    </div>
+
+    <div id="fileInfo"></div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+    </html>
